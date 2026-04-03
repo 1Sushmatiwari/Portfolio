@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushma Tiwari - BIM Student | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Sushma Tiwari</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="home-container">
+        <div class="home-content">
+          <h1 class="hero-title">Hi, I'm <span id="typing-text"></span></h1>
+          <h2 class="hero-subtitle">BIM Student | Web Developer</h2>
+          <p class="hero-description">
+            I create modern, responsive, and user-friendly websites using
+            JavaScript.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="#services" class="btn btn-secondary">My Work</a>
+          </div>
+        </div>
+
+        <div class="home-image">
+          <div class="profile-photo-frame">
+            <img src="img/pro.jpeg" alt="Sushma Tiwari" class="profile-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-code service-icon"></i>
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-mobile-alt service-icon"></i>
+            <h3>Responsive Design</h3>
+            <p>Works on all devices</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-tools service-icon"></i>
+            <h3>Custom Sites</h3>
+            <p>Portfolio & Business websites</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea
+            id="message"
+            placeholder="Message"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="error-msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Sushma Tiwari</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
